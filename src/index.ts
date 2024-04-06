@@ -52,7 +52,7 @@ async function respondfetch(request) {
         "Access-Control-Allow-Origin": "*",
         "Content-Type":
           response.headers?.get("Content-Type") ||
-          "application/vnd.apple.mpegurl",
+          "audio/x-mpegURL",
       },
     });
   } catch (e) {
