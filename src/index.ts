@@ -51,7 +51,8 @@ async function respondfetch(request) {
       headers: {
         "Access-Control-Allow-Origin": "*",
         "Content-Type":
-          "audio/x-mpegURL",
+          response.headers?.get("Content-Type") ||
+          "application/vnd.apple.mpegurl",
       },
     });
   } catch (e) {
