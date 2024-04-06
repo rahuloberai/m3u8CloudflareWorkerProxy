@@ -51,7 +51,6 @@ async function respondfetch(request) {
       headers: {
         "Access-Control-Allow-Origin": "*",
         "Content-Type":
-          response.headers?.get("Content-Type") ||
           "audio/x-mpegURL",
       },
     });
